@@ -45,7 +45,7 @@ const App = () => {
         <div>
           <Container maxWidth="sm">
             <Typography variant="h2" align="center" color="textPrimary" gutterBottom>
-            <a href="https://github.com/ChickenLamb/" target="_blank"></a><Avatar alt="Chicken Lamb" src="./ChickenLamb.svg" sx={{ width: 76, height: 76 }}/>
+            <a href="https://github.com/ChickenLamb/" target="_blank"><Avatar alt="Chicken Lamb" src="./ChickenLamb.svg" sx={{ width: 76, height: 76 }}/></a>
               <br/>
               ChickenLamb Portfolio's
             </Typography>
