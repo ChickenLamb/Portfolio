@@ -25,7 +25,7 @@ import Avatar from '@mui/material/Avatar';
 //     padding: theme.spacing(8,0,6)
 //   }));
 const cards = [{ name: "L3 Education Tutor Site", photo: "//image.thum.io/get/http://next-js-l3.vercel.app/", link:"https://next-js-l3.vercel.app/", description:"I have helped a tutoring center to setup a website, so teacher and student can have their classes online, this is my very first Solo in charge of frontend Dev,it was a memorable journey."},
-{ name: "Storage Supply Tracker", photo: "//image.thum.io/get/http://farm-ville.vercel.app/", link:"farm-ville.vercel.app/", description:"some brainstorming ideas of supplyment tracker system"},
+{ name: "Storage Supply Tracker", photo: "//image.thum.io/get/http://farm-ville.vercel.app/", link:"https://farm-ville.vercel.app/", description:"some brainstorming ideas of supplyment tracker system"},
 { name: "FooberSearch, Find it your way, A platform to search multiple FoodSites for results ", photo: "//image.thum.io/get/http://foober-search-v1.vercel.app/", link:"https://foober-search-v1.vercel.app/" , description:"this idea came from a school teacher, as I was just getting started, I have discovered a larger hole to fill, Should I build a webcrawl api or learn elastic search...(ON HOLD & to be continued)"},
 {name:"Making a Unity Game with Friends", photo:"https://th.bing.com/th?id=OSK.9db110b7a80258719fc5f0c017717e0d&w=188&h=132&c=7&o=6&pid=SANGAM", link:"https://github.com/ChickenLamb/", description:"begin my new journey on Game making, then I see a whole new world with my friend, some fundamentals skill are grpc, fishhnet, c# and unity just like my life, click here to checkout my github profile(STILL DEVELOPING...)"}]
 
@@ -45,7 +45,7 @@ const App = () => {
         <div>
           <Container maxWidth="sm">
             <Typography variant="h2" align="center" color="textPrimary" gutterBottom>
-            <Avatar alt="Chicken Lamb" src="./ChickenLamb.svg" sx={{ width: 76, height: 76 }}/>
+            <a href="https://github.com/ChickenLamb/" target="_blank"></a><Avatar alt="Chicken Lamb" src="./ChickenLamb.svg" sx={{ width: 76, height: 76 }}/>
               <br/>
               ChickenLamb Portfolio's
             </Typography>
@@ -77,8 +77,8 @@ const App = () => {
                 <a href={data.link} target="_blank">
                 <CardMedia image={data.photo} title="Image title" />
                 <CardContent>
-                  <Typography gutterBottom variant="h5">
-                    {data.name}
+                  <Typography gutterBottom variant="h5" >
+                    <b>{data.name}</b>
                   </Typography>
                   <Typography paragraph color="black">
                     {data.description}
